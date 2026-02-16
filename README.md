@@ -1,9 +1,16 @@
 # ⚡ This is Slash Dash - V1.8.1
 
-![Preview do Jogo](./screenshot.png)
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-green)
 ![Versão](https://img.shields.io/badge/Versão-1.8.1%20Fixed-blue)
 ![Tech](https://img.shields.io/badge/Tech-HTML5%20Canvas-orange)
+
+![Preview do Jogo](./screenshot.png)
+
+## 🎮 Jogue Agora
+Clique no link abaixo para testar a versão atual do jogo diretamente no seu navegador:
+
+👉 **[Jogar Slash Dash (Versão 1.8.1)](https://tsuyo-png.github.io/slash-dash/)**
+
 
 **Slash Dash** é um roguelike frenético de precisão e velocidade. Domine a arte do corte, utilize o tempo a seu favor e sobreviva a hordas de inimigos em um ambiente neon minimalista.
 
@@ -41,3 +48,4 @@ Este projeto foi desenvolvido utilizando tecnologias web puras (Vanilla), focado
 - [ ] Implementação de novos chefes.
 - [ ] Sistema de conquistas.
 - [ ] Diferentes tipos de arenas.
+- [ ] Adicionar sons e músicas ao jogo.
