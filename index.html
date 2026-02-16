@@ -32,7 +32,7 @@
         }
         #btn-pause-ui:hover { border-color: #00ffcc; color: #00ffcc; }
 
-        /* LEVEL & XP (FALTAVA ISSO ANTES) */
+        /* LEVEL & XP */
         .level-container { display: flex; flex-direction: column; align-items: center; position: absolute; left: 50%; transform: translateX(-50%); }
         .level-text { font-size: 20px; color: #fff; margin-bottom: 2px; }
         .level-num { font-size: 24px; color: #ffcc00; }
@@ -128,19 +128,19 @@
         <div class="tutorial-grid">
             <div class="t-item">
                 <h3>1. MOVIMENTO & ATAQUE</h3>
-                <p>Segure <span class="t-key">MOUSE ESQUERDO</span> e arraste para trás para mirar (Estilo Estilingue). O tempo entra em <strong>Câmera Lenta</strong> enquanto você mira. Solte para cortar tudo no caminho.</p>
+                <p>Segure <span class="t-key">CLIQUE ESQUERDO</span> e arraste para trás para mirar (Estilo Estilingue). O tempo entra em <strong>Câmera Lenta</strong> enquanto você mira. Solte para cortar tudo no caminho.</p>
             </div>
             <div class="t-item">
                 <h3>2. DEFESA (PARRY)</h3>
-                <p>Pressione <span class="t-key">ESPAÇO</span> ou <span class="t-key">MOUSE DIREITO</span> instantes antes de ser atingido. Se acertar, você bloqueia o dano e recarrega a habilidade imediatamente.</p>
+                <p>Pressione <span class="t-key">ESPAÇO</span> ou <span class="t-key">CLIQUE DIREITO</span> instantes antes de ser atingido. Se acertar, você bloqueia o dano e recarrega a habilidade imediatamente.</p>
             </div>
             <div class="t-item" style="border-color: #ff3333;">
                 <h3 class="t-warn">3. FADIGA (PERIGO)</h3>
                 <p>Se você usar o Parry e <strong>não acertar nada</strong>, você entra em estado de FADIGA. Você ficará vulnerável e sem poder usar habilidades por 1 segundo.</p>
             </div>
             <div class="t-item">
-                <h3>4. REAÇÃO EM CADEIA</h3>
-                <p>Inimigos eliminados podem explodir e causar dano aos vizinhos (Upgrade). Use isso para limpar grupos grandes.</p>
+                <h3>4. CUIDADO AO ATACAR</h3>
+                <p>Se utilizar o dash na direção de um inimigo que acabou de iniciar o ataque você vai tomar dano. Tiros dos inimigos causam dano e interrompe o seu dash.</p>
             </div>
         </div>
         <button onclick="Game.toggleTutorial(false)" style="margin-top: 30px;">ENTENDIDO</button>
@@ -298,7 +298,7 @@
                 canAppear: () => Player.regenLevel < 5 
             },
             { 
-                id: 'static', name: 'REAÇÃO EM CADEIA', desc: 'Explosão elétrica ao matar', 
+                id: 'static', name: 'REAÇÃO EM CADEIA', desc: 'Causa dano em area ao matar', 
                 apply: () => Player.areaDmgLevel++,
                 canAppear: () => Player.areaDmgLevel < 5 
             },
@@ -857,4 +857,5 @@
         Stars.init(); loop(0);
     </script>
 </body>
+
 </html>
